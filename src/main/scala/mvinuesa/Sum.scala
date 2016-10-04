@@ -1,5 +1,4 @@
 import annotation.tailrec
-
 /**
   * Define a sum linear and sum with tailrec
   *
