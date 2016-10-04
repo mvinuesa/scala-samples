@@ -7,15 +7,12 @@ Scala samples to learn basic concepts in Scala language
 
 In *.scala folder
 
-*sbt compile* 
-or 
-*scalac 'file'.scala*
+  * *sbt compile* 
+  * *scalac 'file'.scala*
 
 #### Run it
 
-*sbt run* 
-or 
-*scala 'file'*
-or
-*sbt console*
-*scala> 'file'.main(Array())*
+  * *sbt run* 
+  * *sbt console*
+    *scala> 'file'.main(Array())*
+  * *scala 'file'*
