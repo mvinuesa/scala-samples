@@ -9,10 +9,13 @@ In *.scala folder
 
 *sbt compile* 
 or 
-*scalac <file>.scala*
+*scalac 'file'.scala*
 
 #### Run it
 
 *sbt run* 
 or 
-*scala <file>*
+*scala 'file'*
+or
+*sbt console*
+*scala> 'file'.main(Array())
