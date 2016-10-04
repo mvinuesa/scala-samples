@@ -18,4 +18,4 @@ or
 *scala 'file'*
 or
 *sbt console*
-*scala> 'file'.main(Array())
+*scala> 'file'.main(Array())*
