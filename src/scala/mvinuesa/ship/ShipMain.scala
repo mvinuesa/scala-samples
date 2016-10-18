@@ -1,4 +1,4 @@
-package main.scala.session3
+package ship
 
 import ship.{OK, Ship}
 

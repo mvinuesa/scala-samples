@@ -7,7 +7,8 @@ package ship
   */
 
 /**
-  * Abstrack class for ship cell, extends Ordered
+  * Abstract class for ship cell, extends Ordered
+  *
   * @param x, x axis position
   * @param y, y axis position
   */
@@ -19,7 +20,7 @@ abstract class ShipCell(val x: Int, val y:Int) extends Ordered [ShipCell] {
     else if (this.x > that.x || this.y > that.y)
       1
     else
-      - 1
+      -1
     }
 }
 

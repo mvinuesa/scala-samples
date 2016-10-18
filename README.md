@@ -14,5 +14,10 @@ In *.scala folder
 
   * *sbt run* 
   * *sbt console*
-    *scala> 'file'.main(Array())*
+    *scala> 'package'.file'.main(Array())*
   * *scala 'file'*
+  
+#### Example: 
+  
+  * *scala> ship.ShipMain.main(Array())*
+
