@@ -12,6 +12,10 @@ case class Ship(shipCells: Set[ShipCell]) {
   require(shipCells.size > 0 && shipCells.size <= 4)
   require(isPlaced(shipCells))
 
+  def this(shipCells: (Int, Int)*) = {
+    this((shipCells map {shipCell => OK(shipCell._1, shipCell._2)}).toSet[ShipCell])
+  }
+
   private def isPlaced(shipCells: Set[ShipCell]): Boolean = {
 
     def aux (shipCell: ShipCell, shipCells: Seq[ShipCell], accu : Boolean) : Boolean = {
@@ -52,8 +56,10 @@ case class Ship(shipCells: Set[ShipCell]) {
   }
 
   private def isSunkCell (shipCell: ShipCell) : Boolean = shipCell match {
-      case OK(_ , _) => true
-      case Hit(_ , _) => false
+      case OK(_ , _) => false
+      case Hit(_ , _) => true
   }
+
+  def size = shipCells.size
 
 }
